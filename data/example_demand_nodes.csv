@@ -1,0 +1,21 @@
+name,city,state,lat,lon,demand
+New York,New York,NY,40.7128,-74.0060,200
+Miami,Miami,FL,25.7617,-80.1918,150
+Los Angeles,Los Angeles,CA,34.0522,-118.2437,175
+Boston,Boston,MA,42.3601,-71.0589,125
+Houston,Houston,TX,29.7604,-95.3698,160
+Minneapolis,Minneapolis,MN,44.9778,-93.2650,130
+Kansas City,Kansas City,MO,39.0997,-94.5786,100
+San Francisco,San Francisco,CA,37.7749,-122.4194,145
+San Diego,San Diego,CA,32.7157,-117.1611,115
+Charlotte,Charlotte,NC,35.2271,-80.8431,120
+Indianapolis,Indianapolis,IN,39.7684,-86.1581,110
+Columbus,Columbus,OH,39.9612,-82.9988,105
+Memphis,Memphis,TN,35.1495,-90.0490,95
+Louisville,Louisville,KY,38.2527,-85.7585,90
+Baltimore,Baltimore,MD,39.2904,-76.6122,135
+Richmond,Richmond,VA,37.5407,-77.4360,85
+Salt Lake City,Salt Lake City,UT,40.7608,-111.8910,100
+Albuquerque,Albuquerque,NM,35.0844,-106.6504,80
+Oklahoma City,Oklahoma City,OK,35.4676,-97.5164,95
+St. Louis,St. Louis,MO,38.6270,-90.1994,110

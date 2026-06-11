@@ -1,0 +1,11 @@
+name,city,state,lat,lon,supply
+Chicago,Chicago,IL,41.8781,-87.6298,400
+Dallas,Dallas,TX,32.7767,-96.7970,300
+Seattle,Seattle,WA,47.6062,-122.3321,500
+Atlanta,Atlanta,GA,33.7490,-84.3880,350
+Denver,Denver,CO,39.7392,-104.9903,275
+Philadelphia,Philadelphia,PA,39.9526,-75.1652,325
+Phoenix,Phoenix,AZ,33.4484,-112.0740,290
+Detroit,Detroit,MI,42.3314,-83.0458,260
+Portland,Portland,OR,45.5051,-122.6750,310
+Nashville,Nashville,TN,36.1627,-86.7816,240

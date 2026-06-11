@@ -1,0 +1,201 @@
+supply,demand,cost
+Chicago,New York,13
+Chicago,Miami,24
+Chicago,Los Angeles,32
+Chicago,Boston,15
+Chicago,Houston,24
+Chicago,Minneapolis,7
+Chicago,Kansas City,9
+Chicago,San Francisco,35
+Chicago,San Diego,33
+Chicago,Charlotte,14
+Chicago,Indianapolis,3
+Chicago,Columbus,5
+Chicago,Memphis,10
+Chicago,Louisville,6
+Chicago,Baltimore,13
+Chicago,Richmond,14
+Chicago,Salt Lake City,21
+Chicago,Albuquerque,22
+Chicago,Oklahoma City,15
+Chicago,St. Louis,5
+Dallas,New York,28
+Dallas,Miami,24
+Dallas,Los Angeles,24
+Dallas,Boston,31
+Dallas,Houston,4
+Dallas,Minneapolis,24
+Dallas,Kansas City,12
+Dallas,San Francisco,28
+Dallas,San Diego,22
+Dallas,Charlotte,20
+Dallas,Indianapolis,18
+Dallas,Columbus,20
+Dallas,Memphis,11
+Dallas,Louisville,16
+Dallas,Baltimore,26
+Dallas,Richmond,25
+Dallas,Salt Lake City,18
+Dallas,Albuquerque,11
+Dallas,Oklahoma City,6
+Dallas,St. Louis,14
+Seattle,New York,40
+Seattle,Miami,48
+Seattle,Los Angeles,18
+Seattle,Boston,42
+Seattle,Houston,34
+Seattle,Minneapolis,22
+Seattle,Kansas City,28
+Seattle,San Francisco,13
+Seattle,San Diego,19
+Seattle,Charlotte,38
+Seattle,Indianapolis,33
+Seattle,Columbus,35
+Seattle,Memphis,34
+Seattle,Louisville,34
+Seattle,Baltimore,40
+Seattle,Richmond,40
+Seattle,Salt Lake City,12
+Seattle,Albuquerque,20
+Seattle,Oklahoma City,30
+Seattle,St. Louis,32
+Atlanta,New York,18
+Atlanta,Miami,12
+Atlanta,Los Angeles,36
+Atlanta,Boston,20
+Atlanta,Houston,16
+Atlanta,Minneapolis,20
+Atlanta,Kansas City,18
+Atlanta,San Francisco,38
+Atlanta,San Diego,36
+Atlanta,Charlotte,5
+Atlanta,Indianapolis,10
+Atlanta,Columbus,11
+Atlanta,Memphis,7
+Atlanta,Louisville,9
+Atlanta,Baltimore,16
+Atlanta,Richmond,13
+Atlanta,Salt Lake City,28
+Atlanta,Albuquerque,22
+Atlanta,Oklahoma City,16
+Atlanta,St. Louis,12
+Denver,New York,32
+Denver,Miami,36
+Denver,Los Angeles,18
+Denver,Boston,34
+Denver,Houston,18
+Denver,Minneapolis,18
+Denver,Kansas City,12
+Denver,San Francisco,20
+Denver,San Diego,18
+Denver,Charlotte,26
+Denver,Indianapolis,20
+Denver,Columbus,22
+Denver,Memphis,18
+Denver,Louisville,20
+Denver,Baltimore,30
+Denver,Richmond,30
+Denver,Salt Lake City,8
+Denver,Albuquerque,8
+Denver,Oklahoma City,12
+Denver,St. Louis,16
+Philadelphia,New York,2
+Philadelphia,Miami,20
+Philadelphia,Los Angeles,40
+Philadelphia,Boston,5
+Philadelphia,Houston,28
+Philadelphia,Minneapolis,18
+Philadelphia,Kansas City,20
+Philadelphia,San Francisco,42
+Philadelphia,San Diego,40
+Philadelphia,Charlotte,10
+Philadelphia,Indianapolis,12
+Philadelphia,Columbus,10
+Philadelphia,Memphis,16
+Philadelphia,Louisville,14
+Philadelphia,Baltimore,2
+Philadelphia,Richmond,5
+Philadelphia,Salt Lake City,32
+Philadelphia,Albuquerque,28
+Philadelphia,Oklahoma City,22
+Philadelphia,St. Louis,16
+Phoenix,New York,38
+Phoenix,Miami,34
+Phoenix,Los Angeles,8
+Phoenix,Boston,40
+Phoenix,Houston,16
+Phoenix,Minneapolis,28
+Phoenix,Kansas City,20
+Phoenix,San Francisco,14
+Phoenix,San Diego,6
+Phoenix,Charlotte,28
+Phoenix,Indianapolis,26
+Phoenix,Columbus,28
+Phoenix,Memphis,20
+Phoenix,Louisville,24
+Phoenix,Baltimore,36
+Phoenix,Richmond,34
+Phoenix,Salt Lake City,10
+Phoenix,Albuquerque,6
+Phoenix,Oklahoma City,14
+Phoenix,St. Louis,22
+Detroit,New York,10
+Detroit,Miami,22
+Detroit,Los Angeles,36
+Detroit,Boston,10
+Detroit,Houston,22
+Detroit,Minneapolis,12
+Detroit,Kansas City,14
+Detroit,San Francisco,38
+Detroit,San Diego,36
+Detroit,Charlotte,12
+Detroit,Indianapolis,5
+Detroit,Columbus,4
+Detroit,Memphis,12
+Detroit,Louisville,6
+Detroit,Baltimore,8
+Detroit,Richmond,10
+Detroit,Salt Lake City,26
+Detroit,Albuquerque,24
+Detroit,Oklahoma City,18
+Detroit,St. Louis,10
+Portland,New York,42
+Portland,Miami,50
+Portland,Los Angeles,18
+Portland,Boston,44
+Portland,Houston,36
+Portland,Minneapolis,24
+Portland,Kansas City,28
+Portland,San Francisco,12
+Portland,San Diego,18
+Portland,Charlotte,40
+Portland,Indianapolis,34
+Portland,Columbus,36
+Portland,Memphis,36
+Portland,Louisville,36
+Portland,Baltimore,42
+Portland,Richmond,42
+Portland,Salt Lake City,10
+Portland,Albuquerque,20
+Portland,Oklahoma City,30
+Portland,St. Louis,32
+Nashville,New York,16
+Nashville,Miami,16
+Nashville,Los Angeles,32
+Nashville,Boston,18
+Nashville,Houston,14
+Nashville,Minneapolis,16
+Nashville,Kansas City,12
+Nashville,San Francisco,36
+Nashville,San Diego,32
+Nashville,Charlotte,7
+Nashville,Indianapolis,5
+Nashville,Columbus,7
+Nashville,Memphis,4
+Nashville,Louisville,4
+Nashville,Baltimore,14
+Nashville,Richmond,12
+Nashville,Salt Lake City,24
+Nashville,Albuquerque,18
+Nashville,Oklahoma City,12
+Nashville,St. Louis,6
