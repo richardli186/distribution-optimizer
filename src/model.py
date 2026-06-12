@@ -64,6 +64,29 @@ def solve_model(supply_dict, demand_dict, costs_dict,
     results_df = pd.DataFrame(rows)
     results_df.to_csv(output_file, index = False)
 
+    return lp.value(prob.objective), results_df
+
+def disruption_comparison(reg_results, ds_results, reg_cost, ds_cost):
+    """
+    Creates a text file showing the difference in units transported on each route
+
+    Inputs:
+        - reg_results: a DataFrame representing the units transported on each route in a regular scenario
+        - ds_results: a DataFrame representing the units transported on each route in the disruption scenario
+        - reg_cost: a real number representing the transportation cost in a regular scenario
+        - ds_cost: a real number representing the transportation cost in the disruption scenario
+    """
+    df = reg_results.merge(ds_results, on = ['supply', 'demand'], how = 'outer')
+    df = df.fillna(0)
+    df['Route'] = df['supply'] + ' to ' + df['demand']
+    df = df[df['units_x'] != df['units_y']]
+    df.rename(columns = {'units_x': 'Regular Units', 'units_y': 'Disruption Units'}, inplace = True)
+    df[['Route', 'Regular Units', 'Disruption Units']].to_csv('outputs/disruption_comparison.txt', index = False)
+
+    with open('outputs/disruption_comparison.txt', 'a') as f:
+        f.write(f'\nBaseline cost: {reg_cost:,.2f}\n')
+        f.write(f'Disruption cost: {ds_cost:,.2f}\n')
+        f.write(f'Change: {(ds_cost - reg_cost) / reg_cost:.1%}\n')
 
 def main():
     parser = argparse.ArgumentParser(description = 'Supply chain distribution optimizer')
@@ -90,15 +113,21 @@ def main():
     
     supply_dict = {'S_' + name: cap for name, cap in zip(s_df['name'], s_df['supply'])}
     demand_dict = {'D_' + name: dem for name, dem in zip(d_df['name'], d_df['demand'])}
-    solve_model(supply_dict, demand_dict, costs_dict)
+    reg_optimal_cost, reg_results = solve_model(supply_dict, demand_dict, costs_dict)
 
     if args.disruption: #if disruption scenario is provided
         disruption_df = pd.read_csv(args.disruption)
         ut.validate_csv(disruption_df, ['type', 'name', 'new_value'], 'Disruption CSV')
         ds_supply_dict, ds_demand_dict = apply_disruption(supply_dict, demand_dict, disruption_df)
-        solve_model(ds_supply_dict, ds_demand_dict, costs_dict, 
-                    output_file = 'outputs/disruption_results.csv',
-                    lp_file = 'outputs/disruption_optimizer.lp')
+        ds_optimal_cost, ds_results = solve_model(ds_supply_dict, ds_demand_dict, costs_dict, 
+                                      output_file = 'outputs/disruption_results.csv',
+                                      lp_file = 'outputs/disruption_optimizer.lp')
+        
+        percent_change = (ds_optimal_cost - reg_optimal_cost) / reg_optimal_cost
+        print(f'The disruption increases the optimal total cost by {percent_change:.1%}, '
+              f'from {reg_optimal_cost:,.2f} to {ds_optimal_cost:,.2f}')
+        
+        disruption_comparison(reg_results, ds_results, reg_optimal_cost, ds_optimal_cost)
 
 if __name__ == '__main__':
     main()
