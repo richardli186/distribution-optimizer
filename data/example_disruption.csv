@@ -1,0 +1,4 @@
+type,name,new_value
+supply,Dallas,0
+supply,Seattle,150
+demand,New York,100

@@ -76,6 +76,14 @@ def load_cost_matrix(costs_df):
     return costs_dict
 
 def validate_csv(df, required_columns, file_name):
+    """
+    Checks if a CSV has the required columns to use the model
+
+    Inputs:
+        - df: a DataFrame representing the data in a CSV
+        - required_columns: a list of strings representing the required column names in the DataFrame
+        - file_name: the name of the CSV
+    """
     missing = set(required_columns) - set(df.columns)
     if missing:
         raise ValueError(

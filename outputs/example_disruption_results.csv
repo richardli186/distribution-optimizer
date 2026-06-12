@@ -1,0 +1,27 @@
+supply,demand,units
+Chicago,Minneapolis,130.0
+Chicago,Kansas City,85.0
+Chicago,Indianapolis,75.0
+Chicago,St. Louis,110.0
+Atlanta,Miami,150.0
+Atlanta,Houston,80.0
+Atlanta,Charlotte,120.0
+Denver,Houston,25.0
+Denver,Kansas City,15.0
+Denver,Salt Lake City,60.0
+Denver,Albuquerque,80.0
+Denver,Oklahoma City,95.0
+Philadelphia,New York,100.0
+Philadelphia,Boston,125.0
+Philadelphia,Baltimore,100.0
+Phoenix,Los Angeles,175.0
+Phoenix,San Diego,115.0
+Detroit,Indianapolis,35.0
+Detroit,Columbus,105.0
+Detroit,Baltimore,35.0
+Detroit,Richmond,85.0
+Portland,San Francisco,145.0
+Portland,Salt Lake City,40.0
+Nashville,Houston,55.0
+Nashville,Memphis,95.0
+Nashville,Louisville,90.0
