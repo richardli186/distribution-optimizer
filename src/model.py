@@ -102,8 +102,12 @@ def main():
     d_df = pd.read_csv(args.demand)
 
     #make sure csvs have necessary columns
-    ut.validate_csv(s_df, ['name', 'city', 'state', 'lat', 'lon', 'supply'], "Supply CSV")
-    ut.validate_csv(d_df, ['name', 'city', 'state', 'lat', 'lon', 'demand'], "Demand CSV")
+    if args.costs:
+        ut.validate_csv(s_df, ['name', 'supply'], 'Supply CSV')
+        ut.validate_csv(d_df, ['name', 'demand'], 'Demand CSV')
+    else:
+        ut.validate_csv(s_df, ['name', 'lat', 'lon', 'supply'], 'Supply CSV')
+        ut.validate_csv(d_df, ['name', 'lat', 'lon', 'demand'], 'Demand CSV')
     if args.costs: #if cost csv is provided
         costs_df = pd.read_csv(args.costs)
         ut.validate_csv(costs_df, ['supply', 'demand', 'cost'], 'Costs CSV')
